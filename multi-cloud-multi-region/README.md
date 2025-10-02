@@ -18,12 +18,24 @@ Your company needs a resilient, cloud-agnostic “asset landing zone.” Product
 
 ```files
 multi-cloud-multi-region
-├── aws
-│   ├── eu-central-1
-│   └── us-east-1
-├── azure
-│   ├── east-us
-│   └── west-europe
+├── aws-azure-cloud-tf.png
+├── aws-s3
+│   ├── eu-central-1
+│   │   ├── main.tf
+│   │   ├── terraform.tfstate
+│   │   └── terraform.tfstate.backup
+│   └── us-east-1
+│       ├── main.tf
+│       ├── terraform.tfstate
+│       └── terraform.tfstate.backup
+├── azure-blob
+│   ├── east-us
+│   │   ├── main.tf
+│   │   ├── terraform.tfstate
+│   │   └── terraform.tfstate.backup
+│   └── west-europe
+│       ├── main.tf
+│       ├── terraform.tfstate
+│       └── terraform.tfstate.backup
 └── README.md
 ```
-
