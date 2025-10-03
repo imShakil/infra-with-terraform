@@ -5,8 +5,8 @@ variable "region" {
 }
 
 variable "availability_zone" {
-  default = "ap-southeast-1a"
-  type = string
+  default     = "ap-southeast-1a"
+  type        = string
   description = "AWS availability_zone"
 }
 
