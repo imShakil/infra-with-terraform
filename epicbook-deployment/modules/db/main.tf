@@ -15,6 +15,8 @@ resource "azurerm_mysql_flexible_server" "mysqlServer" {
   delegated_subnet_id = var.subnet_id
   private_dns_zone_id = var.private_dns_zone_id
 
+  depends_on = [ var.dns_zone_link_id ]
+
 }
 
 resource "azurerm_mysql_flexible_database" "mysqlDB" {
